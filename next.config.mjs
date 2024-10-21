@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    "rules": {
+        "@typescript-eslint/no-require-imports": "error"
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'img.icons8.com',
+                port: '',
+            },
+        ],
+    },
+};
 
 export default nextConfig;

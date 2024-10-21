@@ -1,7 +1,8 @@
 'use client'
 import Image from 'next/image'
-import styles from './Nav.module.css'
 import Link from 'next/link'
+import styles from './Nav.module.css'
+import { nineteaRegular } from '@/functions/fonts'
 
 export default function Nav() {
     return (
@@ -16,7 +17,7 @@ export default function Nav() {
                 />
             </div>
             <div>
-                <ul className={styles.NavList}>
+                <ul className={`${styles.NavList} ${nineteaRegular.className}`}>
                     <li>
                         <Link href={`#sobre`}>
                             Quem Somos
@@ -25,6 +26,11 @@ export default function Nav() {
                     <li>
                         <Link href={`#propostas`}>
                             Nossas Propostas
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href={`#contato`}>
+                            Contato
                         </Link>
                     </li>
                 </ul>

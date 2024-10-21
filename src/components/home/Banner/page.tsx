@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination } from 'swiper/modules'
+import { Autoplay, Pagination } from 'swiper/modules'
 import styles from './Banner.module.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -14,8 +14,15 @@ export default function Banner() {
             pagination={{
                 dynamicBullets: true,
             }}
-            modules={[Pagination]}
+            freeMode={true}
+            autoplay={{
+                delay: 5000,
+            }}
+            modules={[Autoplay, Pagination]}
             className={styles.swiperHome}
+            style={{
+                marginTop: '67px'
+            }}
         >
             <SwiperSlide>
                 <Image

@@ -1,0 +1,35 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100vw;
+    background: linear-gradient(135deg, var(--verde-100) 0%, var(--verde-25) 100%);
+}
+
+.NavList {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavList li {
+    color: #ffffff;
+}
+
+.NavList li:hover {
+    color: var(--verde-100);
+    cursor: pointer;
+    transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@media (max-width: 991px) {
+    .NavList li {
+        font-size: 0.8rem;
+    }
+}
