@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px 20px 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.qsCard {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    max-width: 700px;
+}
+
+.qsImage {
+    border-radius: 50%;
+}
+
+.qsTextArea {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.qsTitle {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.qsText {
+    text-align: justify;
+}

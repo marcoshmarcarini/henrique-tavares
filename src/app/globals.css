@@ -5,13 +5,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --verde-100: rgba(6,113,49,100);
-  --verde-50: rgba(0,153,40,100);
-  --verde-25: rgba(157,251,1,100);
-  --azul-100: rgba(0,52,149,100);
-  --azul-50: rgba(0,194,188,100);
-  --azul-25: rgba(40,228,250,100);
-  
+  --verde-100: rgba(6, 113, 49, 100);
+  --verde-50: rgba(0, 153, 40, 100);
+  --verde-25: rgba(157, 251, 1, 100);
+  --azul-100: rgba(0, 52, 149, 100);
+  --azul-50: rgba(0, 194, 188, 100);
+  --azul-25: rgba(40, 228, 250, 100);
+
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /*
@@ -28,7 +32,8 @@ body {
   background: linear-gradient(135deg, var(--verde-25) 0%, var(--azul-25) 100%);
   font-family: Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
-  background-size: 100vw 100vh;
+  background-size: 100vw 100%;
+  /* Temporário */
 }
 
 @layer utilities {
