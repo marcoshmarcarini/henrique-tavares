@@ -1,12 +1,11 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Navigation } from "swiper/modules"
+import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import styles from './Propostas.module.css'
 import { kupertinoOblique, nineteaMedium } from "@/functions/fonts"
-
 
 export default function Propostas() {
     return (
@@ -23,7 +22,7 @@ export default function Propostas() {
                     delay: 10000,
                 }}
                 grabCursor={true}
-                modules={[Autoplay, Navigation]}
+                modules={[Autoplay, Navigation, Pagination]}
                 className={`${styles.swiperPropostas}`}
                 style={{
                     "--swiper-navigation-color": 'var(--verde-100)',

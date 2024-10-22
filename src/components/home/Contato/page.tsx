@@ -9,7 +9,7 @@ export default function Contato() {
         telefone: ''
     })
 
-    const handleSubmit = async (e: any) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         const response = await fetch('/api/send-email', {
             method: 'POST',
