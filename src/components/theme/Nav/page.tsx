@@ -315,28 +315,26 @@ export default function Nav() {
                     />
                 </Link>
             </div>
-            <div>
-                <ul
-                    className={`${styles.NavList} ${nineteaRegular.className}`}
-                    style={navListStyle}
-                >
-                    <li>
-                        <Link href={`#sobre`} onClick={handleClickLink}>
-                            Quem Somos
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={`#propostas`} onClick={handleClickLink}>
-                            Nossas Propostas
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href={`#contato`} onClick={handleClickLink}>
-                            Contato
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+            <ul
+                className={`${styles.NavList} ${nineteaRegular.className}`}
+                style={navListStyle}
+            >
+                <li>
+                    <Link href={`#sobre`} onClick={handleClickLink}>
+                        Quem Somos
+                    </Link>
+                </li>
+                <li>
+                    <Link href={`#propostas`} onClick={handleClickLink}>
+                        Nossas Propostas
+                    </Link>
+                </li>
+                <li>
+                    <Link href={`#contato`} onClick={handleClickLink}>
+                        Contato
+                    </Link>
+                </li>
+            </ul>
 
             <div className={styles.Hamburger} onClick={handleClick} style={hamburguerStyle}>
                 <div className={styles.HamburgerLine} style={hamburguerLineStyle1}></div>
