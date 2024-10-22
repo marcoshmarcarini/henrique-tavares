@@ -11,11 +11,9 @@
   --azul-100: rgba(0, 52, 149, 100);
   --azul-50: rgba(0, 194, 188, 100);
   --azul-25: rgba(40, 228, 250, 100);
-
   --azul-100-50: rgba(0, 52, 149, 0.2);
   --azul-25-50: rgba(40, 228, 250, 0.2);
   --verde-100-25: rgba(6, 113, 49, 0.15);
-
   --swiper-navigation-color: var(--verde-100) !important;
 
 }
