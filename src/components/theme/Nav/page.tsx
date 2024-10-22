@@ -8,7 +8,7 @@ import { CSSProperties, useEffect, useState } from 'react'
 
 
 export default function Nav() {
-    const { innerWidth: width } = window
+    /* const { innerWidth: width } = window */
 
     const [navStyle, setNavStyle] = useState<CSSProperties>({
         height: '67px',
@@ -61,7 +61,7 @@ export default function Nav() {
     })
 
     const handleWindow = () => {
-        if (width < 991) {
+        if (window.innerWidth < 991) {
             setHamburguerStyle({
                 display: 'flex',
                 transition: '400ms cubic-bezier(0.175, 0.885, 0.32, 1.275)',
@@ -80,7 +80,7 @@ export default function Nav() {
                 right: '0',
             })
 
-        } else if (width > 991) {
+        } else if (window.innerWidth > 991) {
             setHamburguerStyle({
                 display: 'none',
                 transition: '400ms cubic-bezier(0.175, 0.885, 0.32, 1.275)',

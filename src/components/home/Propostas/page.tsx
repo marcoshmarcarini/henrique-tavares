@@ -9,8 +9,6 @@ import { kupertinoOblique, nineteaMedium } from "@/functions/fonts"
 
 
 export default function Propostas() {
-
-
     return (
         <div id="propostas" className={styles.propostas}>
             <h2 className={`${styles.propostasTitle} ${kupertinoOblique.className}`}>NOSSAS PROPOSTAS</h2>
