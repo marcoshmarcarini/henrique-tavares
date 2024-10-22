@@ -6,7 +6,7 @@ import Footer from "@/components/theme/Footer/page";
 
 export const metadata: Metadata = {
   title: "Henrique Tavares e Priscila Thomaz",
-  description: "Juntos a OAB Pode Mais",
+  description: "A OAB pode mais.",
   authors: [
     {
       name: "Marcos Henrique Marcarini Junior",
@@ -14,12 +14,12 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Henrique Tavares e Priscila Thomaz",
-    description: "Juntos a OAB Pode Mais",
+    description: "A OAB pode mais.",
     url: "https://aoabpodemais.com.br",
     siteName: "Henrique Tavares e Priscila Thomaz",
     images: [
       {
-        url: "https://aoabpodemais.com.br/img/logo.png",
+        url: "https://aoabpodemais.com.br/img/logo-2.png",
         alt: "Henrique Tavares e Priscila Thomaz",
         width: 1200,
         height: 630,
@@ -31,10 +31,10 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Henrique Tavares e Priscila Thomaz",
-    description: "Juntos a OAB Pode Mais",
+    description: "A OAB pode mais.",
     images: [
       {
-        url: "https://aoabpodemais.com.br/img/logo.png",
+        url: "https://aoabpodemais.com.br/img/logo-2.png",
         alt: "Henrique Tavares e Priscila Thomaz",
         width: 1200,
         height: 630,
