@@ -7,8 +7,6 @@
     text-align: center;
     font-size: 18px;
     background: #fff;
-
-    /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,18 +18,6 @@
     height: 100%;
     object-fit: cover;
 }
-
-/* .swiper-slide {
-    width: 80%;
-}
-
-.swiper-slide:nth-child(2n) {
-    width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-    width: 40%;
-} */
 
 .propostas {
     display: flex;
@@ -52,10 +38,10 @@
 }
 
 .propostaCard {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center; */
     gap: 20px;
     padding: 30px 20px;
     background: linear-gradient(135deg, var(--azul-100-50) 100%, var(--azul-25-50) 0%);
@@ -91,4 +77,37 @@
     font-size: 1rem;
     font-weight: 400;
     text-align: justify;
+}
+
+
+@media (max-width:991px) {
+    .propostaCard {
+        max-width: 500px;
+        height: max-content;
+    }
+}
+
+@media(max-width:700px) {
+    .propostaCard {
+        max-width: 400px;
+        height: max-content;
+    }
+}
+
+@media(max-width:500px) {
+    .propostaTitle {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+        text-shadow: 2px 2px 8px #6b6b6b50;
+    }
+
+    .propostaCard {
+        max-width: 300px;
+        height: max-content;
+    }
+
+    .propostaListItem {
+        font-size: 0.8rem;
+    }
 }

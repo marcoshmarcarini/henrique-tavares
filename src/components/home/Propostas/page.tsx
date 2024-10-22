@@ -1,11 +1,10 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
+import { Autoplay, Navigation } from "swiper/modules"
 import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import styles from './Propostas.module.css'
-import { swiperNavigationColor } from 'swiper/css/navigation'
 import { kupertinoOblique, nineteaMedium } from "@/functions/fonts"
 
 
@@ -17,7 +16,6 @@ export default function Propostas() {
             <h2 className={`${styles.propostasTitle} ${kupertinoOblique.className}`}>NOSSAS PROPOSTAS</h2>
             <Swiper
                 slidesPerView={'auto'}
-                spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}
@@ -29,7 +27,10 @@ export default function Propostas() {
                 grabCursor={true}
                 modules={[Autoplay, Navigation]}
                 className={`${styles.swiperPropostas}`}
-                style={{ [swiperNavigationColor]: 'var(--verde-100)' }}
+                style={{
+                    "--swiper-navigation-color": 'var(--verde-100)',
+                    "--swiper-navigation-size": '25px',
+                }}
 
             >
                 <SwiperSlide>

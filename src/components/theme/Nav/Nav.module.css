@@ -11,6 +11,12 @@
     background: linear-gradient(135deg, var(--verde-100) 0%, var(--verde-25) 100%);
 }
 
+.Logo {
+    width: 150px;
+    height: auto;
+    transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
 .NavList {
     display: flex;
     gap: 20px;
@@ -28,8 +34,74 @@
     transition: 400ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+
+
+.Hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.HamburgerLine {
+    width: 20px;
+    height: 2px;
+    background: var(--verde-100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
 @media (max-width: 991px) {
     .NavList li {
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .Logo {
+        width: 100px;
+        height: auto;
+    }
+
+    .NavList {
+        gap: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .Nav {
+        padding: 10px 20px;
+    }
+
+    .Logo {
+        width: 80px;
+        height: auto;
+    }
+
+    .NavList {
+        gap: 0px;
+    }
+
+    .NavList li {
+        text-wrap: wrap;
+        width: 80px;
+        text-align: center;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:400px) {
+    .Logo {
+        width: 80px;
+        height: auto;
     }
 }

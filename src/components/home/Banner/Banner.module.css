@@ -21,3 +21,14 @@
     height: 100%;
     object-fit: cover;
 }
+
+.swiperHome {
+    margin-top: 67px;
+}
+
+
+@media (max-width:500px) {
+    .swiperHome {
+        margin-top: 60px;
+    }
+}

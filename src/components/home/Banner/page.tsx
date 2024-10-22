@@ -9,6 +9,7 @@ import 'swiper/css/pagination'
 
 
 export default function Banner() {
+
     return (
         <Swiper
             pagination={{
@@ -20,9 +21,6 @@ export default function Banner() {
             }}
             modules={[Autoplay, Pagination]}
             className={styles.swiperHome}
-            style={{
-                marginTop: '67px'
-            }}
         >
             <SwiperSlide>
                 <Image

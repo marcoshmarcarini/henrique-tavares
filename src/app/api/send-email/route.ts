@@ -19,7 +19,7 @@ export async function POST(req: Request) {
         // Configurar o e-mail
         const mailOptions = {
             from: process.env.EMAIL_USER, // Remetente (seu email)
-            to: process.env.EMAIL_USER, // Enviar para o próprio email (ou você pode alterar para outro destinatário)
+            to: process.env.EMAIL_SEND, // Enviar para o próprio email (ou você pode alterar para outro destinatário)
             subject: `Novo contato de ${nome}`, // Assunto do email
             text: `Você recebeu um novo contato:\n\nNome: ${nome}\nEmail: ${email}\nTelefone: ${telefone}`, // Corpo do email
             replyTo: email, // Definir o email do remetente como o endereço de resposta

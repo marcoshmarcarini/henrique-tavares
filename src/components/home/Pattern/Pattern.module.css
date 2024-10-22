@@ -12,3 +12,15 @@
         height: 420px;
     }
 }
+
+@media (max-width: 700px) {
+    .imgPattern {
+        height: 670px;
+    }
+}
+
+@media (max-width: 500px) {
+    .imgPattern {
+        height: 600px;
+    }
+}
