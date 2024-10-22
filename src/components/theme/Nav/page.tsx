@@ -5,10 +5,7 @@ import styles from './Nav.module.css'
 import { nineteaRegular } from '@/functions/fonts'
 import { CSSProperties, useEffect, useState } from 'react'
 
-
-
 export default function Nav() {
-    /* const { innerWidth: width } = window */
 
     const [navStyle, setNavStyle] = useState<CSSProperties>({
         height: '67px',

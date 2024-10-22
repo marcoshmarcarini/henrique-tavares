@@ -6,6 +6,14 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import styles from './Propostas.module.css'
 import { kupertinoOblique, nineteaMedium } from "@/functions/fonts"
+import { CSSProperties } from "react"
+
+
+interface CustomStyle extends CSSProperties {
+    ["--swiper-navigation-size"]?: string
+    ["--swiper-navigation-color"]?: string
+
+}
 
 export default function Propostas() {
     return (
@@ -25,9 +33,9 @@ export default function Propostas() {
                 modules={[Autoplay, Navigation, Pagination]}
                 className={`${styles.swiperPropostas}`}
                 style={{
-                    "--swiper-navigation-color": 'var(--verde-100)',
                     "--swiper-navigation-size": '25px',
-                }}
+                    "--swiper-navigation-color": 'var(--verde-100)',
+                } as CustomStyle}
 
             >
                 <SwiperSlide>

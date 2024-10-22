@@ -55,8 +55,6 @@ export default function QuemSomos() {
                     className={styles.qsImage}
                 />
             </div>
-
-
         </div>
     )
 

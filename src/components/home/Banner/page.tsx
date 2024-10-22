@@ -6,8 +6,6 @@ import styles from './Banner.module.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-
-
 export default function Banner() {
 
     return (
