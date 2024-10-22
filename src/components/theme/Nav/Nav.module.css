@@ -86,14 +86,11 @@
     }
 
     .NavList {
-        gap: 0px;
+        gap: 20px;
     }
 
     .NavList li {
-        text-wrap: wrap;
-        width: 80px;
-        text-align: center;
-        line-height: 20px;
+        font-size: 1.5rem;
     }
 }
 
