@@ -4,20 +4,19 @@ import styles from './Contato.module.css'
 import { PatternFormat } from "react-number-format"
 
 
-
-interface TelefoneMask {
-    lastValue: string
+interface FormData {
+    nome: string
+    email: string
+    telefone: string
 }
 
 
-
 export default function Contato() {
-    const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState<FormData>({
         nome: '',
         email: '',
         telefone: ''
     })
-
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
