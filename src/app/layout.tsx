@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Nav from "@/components/theme/Nav/page";
 import Footer from "@/components/theme/Footer/page";
@@ -41,9 +41,14 @@ export const metadata: Metadata = {
       },
     ],
   },
-  themeColor: "#9df101", // Cor para barra do navegador em dispositivos móveis.
-  viewport: "width=device-width, initial-scale=1.0", // Para responsividade.
   robots: "index, follow", // Para os bots de busca indexarem.
+}
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 1.0,
+  themeColor: "#9df101",
 }
 
 export default function RootLayout({
