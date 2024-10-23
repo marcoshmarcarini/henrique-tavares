@@ -22,7 +22,7 @@ export default function Banner() {
         >
             <SwiperSlide>
                 <Image
-                    src={`/img/banner/banner-1.jpg`}
+                    src={`/img/banner/Banner-1.jpg`}
                     alt={`1`}
                     className={styles.slideImage}
                     width={1920}
