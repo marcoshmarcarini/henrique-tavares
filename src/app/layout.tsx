@@ -41,7 +41,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  themeColor: "rgba(157, 251, 1, 100)", // Cor para barra do navegador em dispositivos móveis.
+  themeColor: "#9df101", // Cor para barra do navegador em dispositivos móveis.
   viewport: "width=device-width, initial-scale=1.0", // Para responsividade.
   robots: "index, follow", // Para os bots de busca indexarem.
 }
