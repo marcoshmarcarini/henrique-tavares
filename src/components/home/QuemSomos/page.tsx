@@ -1,7 +1,7 @@
 'use client'
 import styles from './QuemSomos.module.css'
 import Image from 'next/image'
-import { kupertino, nineteaMedium, quinn } from '@/functions/fonts'
+import { nineteaMedium, quinn } from '@/functions/fonts'
 
 export default function QuemSomos() {
     return (

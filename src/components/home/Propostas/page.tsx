@@ -5,7 +5,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import styles from './Propostas.module.css'
-import { kupertinoOblique, nineteaMedium, quinn } from "@/functions/fonts"
+import { nineteaMedium, quinn } from "@/functions/fonts"
 import { CSSProperties } from "react"
 
 
