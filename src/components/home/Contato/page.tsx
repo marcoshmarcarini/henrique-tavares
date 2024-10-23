@@ -1,12 +1,23 @@
 'use client'
 import { useState } from "react"
 import styles from './Contato.module.css'
+import { PatternFormat } from "react-number-format"
+
+
+
+interface TelefoneMask {
+    lastValue: string
+}
+
+
+
 export default function Contato() {
     const [formData, setFormData] = useState({
         nome: '',
         email: '',
         telefone: ''
     })
+
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -23,6 +34,12 @@ export default function Contato() {
         } else {
             alert('Erro ao enviar o e-mail!')
         }
+
+        setFormData({
+            nome: '',
+            email: '',
+            telefone: ''
+        })
     }
 
     return (
@@ -50,9 +67,12 @@ export default function Contato() {
                     className={styles.input}
                     required
                 />
-                <input
+
+                <PatternFormat
                     type="text"
                     name="telefone"
+                    format="(##) #####-####"
+                    mask="_"
                     value={formData.telefone}
                     onChange={(e) => setFormData({ ...formData, telefone: e.target.value })}
                     placeholder="Telefone"
