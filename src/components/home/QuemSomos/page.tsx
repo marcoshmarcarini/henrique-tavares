@@ -1,12 +1,12 @@
 'use client'
 import styles from './QuemSomos.module.css'
 import Image from 'next/image'
-import { kupertino, nineteaMedium } from '@/functions/fonts'
+import { kupertino, nineteaMedium, quinn } from '@/functions/fonts'
 
 export default function QuemSomos() {
     return (
         <div className={styles.container} id='sobre'>
-            <div className={styles.qsCard}>
+            <div className={`${styles.qsCard} ${styles.henrique}`}>
                 <Image
                     src="/img/perfis/Avatar-Henrique.png"
                     alt="Henrique Tavares"
@@ -14,8 +14,8 @@ export default function QuemSomos() {
                     height={150}
                     className={styles.qsImage}
                 />
-                <div className={styles.qsTextArea}>
-                    <h1 className={`${styles.qsTitle} ${kupertino.className}`}>Quem é Henrique Tavares?</h1>
+                <div className={`${styles.qsTextArea}`} >
+                    <h1 className={`${styles.qsTitle} ${quinn.className}`}>Quem é <span>Henrique Tavares?</span></h1>
                     <p className={`${styles.qsText} ${nineteaMedium.className}`}>
                         Henrique da Cunha Tavares é advogado há 22 anos e sócio do escritório Tavares e Giro Advocacia.
                         Mestre em Direitos e Garantias Fundamentais pela FDV e especialista em Direito Tributário, Henrique
@@ -31,9 +31,9 @@ export default function QuemSomos() {
                     </p>
                 </div>
             </div>
-            <div className={styles.qsCard}>
-                <div className={styles.qsTextArea}>
-                    <h1 className={`${styles.qsTitle} ${kupertino.className}`}>Quem é Priscilla Thomaz?</h1>
+            <div className={`${styles.qsCard} ${styles.priscilla}`}>
+                <div className={styles.qsTextArea} id='priscilla'>
+                    <h1 className={`${styles.qsTitle} ${quinn.className}`}>Quem é <span>Priscilla Thomaz?</span></h1>
                     <p className={`${styles.qsText} ${nineteaMedium.className}`}>
                         Priscilla Thomaz é advogada há mais de 20 anos, graduada em Direito pela Faculdade Milton Campos (BH)
                         em 2002. Especialista em Direito do Trabalho e Direito Previdenciário, tem forte atuação nas áreas

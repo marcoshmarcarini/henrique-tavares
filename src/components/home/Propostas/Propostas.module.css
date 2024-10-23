@@ -31,7 +31,7 @@
 }
 
 .propostasTitle {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     text-align: center;
     color: var(--verde-100);
@@ -60,6 +60,10 @@
 .propostaTitle {
     font-size: 1.25rem;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #6b6b6b50;
+    color: var(--verde-25);
 }
 
 .propostaList {
@@ -69,7 +73,7 @@
     align-items: flex-start;
     gap: 5px;
     width: 100%;
-    list-style-type: disc;
+    list-style-type: "✅";
     padding-left: 20px;
 }
 

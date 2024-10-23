@@ -5,7 +5,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import styles from './Propostas.module.css'
-import { kupertinoOblique, nineteaMedium } from "@/functions/fonts"
+import { kupertinoOblique, nineteaMedium, quinn } from "@/functions/fonts"
 import { CSSProperties } from "react"
 
 
@@ -18,7 +18,7 @@ interface CustomStyle extends CSSProperties {
 export default function Propostas() {
     return (
         <div id="propostas" className={styles.propostas}>
-            <h2 className={`${styles.propostasTitle} ${kupertinoOblique.className}`}>NOSSAS PROPOSTAS</h2>
+            <h2 className={`${styles.propostasTitle} ${quinn.className}`}>NOSSAS PROPOSTAS</h2>
             <Swiper
                 slidesPerView={'auto'}
                 pagination={{
@@ -40,7 +40,7 @@ export default function Propostas() {
             >
                 <SwiperSlide>
                     <div className={styles.propostaCard}>
-                        <h2 className={`${styles.propostaTitle} ${kupertinoOblique.className}`}>Formação para o exercício da advocacia</h2>
+                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>Formação para o exercício da advocacia</h2>
                         <ul className={`${styles.propostaList} ${nineteaMedium.className}`}>
                             <li className={styles.propostaListItem}>
                                 Oferecimento contínuo de cursos e treinamentos sobre o uso de sistemas processuais
@@ -66,7 +66,7 @@ export default function Propostas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.propostaCard}>
-                        <h2 className={`${styles.propostaTitle} ${kupertinoOblique.className}`}>OAB mais moderna, transparente, inclusiva e próxima da advocacia</h2>
+                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>OAB mais moderna, transparente, inclusiva e próxima da advocacia</h2>
                         <ul className={`${styles.propostaList} ${nineteaMedium.className}`}>
                             <li className={styles.propostaListItem}>
                                 Melhoria da comunicação entre a OAB e os advogados, adotando ferramentas modernas de gestão e
@@ -81,7 +81,7 @@ export default function Propostas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.propostaCard}>
-                        <h2 className={`${styles.propostaTitle} ${kupertinoOblique.className}`}>Apoio ao jovem advogado</h2>
+                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>Apoio ao jovem advogado</h2>
                         <ul className={`${styles.propostaList} ${nineteaMedium.className}`}>
                             <li className={styles.propostaListItem}>
                                 Implementação de um programa permanente de iniciação à prática da advocacia, com novas
@@ -96,7 +96,7 @@ export default function Propostas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.propostaCard}>
-                        <h2 className={`${styles.propostaTitle} ${kupertinoOblique.className}`}>Defesa das Prerrogativas</h2>
+                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>Defesa das Prerrogativas</h2>
                         <ul className={`${styles.propostaList} ${nineteaMedium.className}`}>
                             <li className={styles.propostaListItem}>
                                 Instalação de uma Comissão de Prerrogativas para garantir que todas as demandas sejam

@@ -14,6 +14,7 @@
     justify-content: center;
     align-items: start;
     max-width: 700px;
+
 }
 
 .qsImage {
@@ -28,12 +29,36 @@
 
 .qsTitle {
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+
+}
+
+.qsTitle span {
     color: var(--verde-25);
 }
 
 .qsText {
     text-align: justify;
+}
+
+
+.henrique {
+    animation: fadeInLeft 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.priscilla {
+    animation: fadeInRight 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 
@@ -57,5 +82,32 @@
 
     .qsText {
         font-size: 0.8rem;
+    }
+}
+
+
+
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

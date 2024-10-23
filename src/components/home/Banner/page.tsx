@@ -22,22 +22,38 @@ export default function Banner() {
         >
             <SwiperSlide>
                 <Image
-                    src={`/img/banner/banner-2.jpeg`}
+                    src={`/img/banner/banner-1.jpg`}
                     alt={`1`}
-                    width={1920}
-                    height={1080}
                     className={styles.slideImage}
-                    quality={100}
+                    width={1920}
+                    height={696}
+                    quality={75}
+                    sizes={`100vw`}
+                    style={{
+                        width: '100%',
+                        height: 'auto',
+                    }}
+                    loading={`lazy`}
+                    blurDataURL={`/img/banner/placeholder.png`}
+                    placeholder={`blur`}
                 />
             </SwiperSlide>
             <SwiperSlide>
                 <Image
-                    src={`/img/banner/banner-3.jpeg`}
+                    src={`/img/banner/banner-2.jpg`}
                     alt={`2`}
-                    width={1920}
-                    height={1080}
                     className={styles.slideImage}
-                    quality={100}
+                    width={1920}
+                    height={696}
+                    quality={75}
+                    sizes={`100vw`}
+                    style={{
+                        width: '100%',
+                        height: 'auto',
+                    }}
+                    loading={`lazy`}
+                    blurDataURL={`/img/banner/placeholder.png`}
+                    placeholder={`blur`}
                 />
             </SwiperSlide>
         </Swiper>

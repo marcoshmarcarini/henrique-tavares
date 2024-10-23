@@ -45,7 +45,7 @@ const nineteaMedium = localFont({
     variable: '--font-ninetea-medium'
 })
 
-const nineteaRegular = localFont({  
+const nineteaRegular = localFont({
     src: '../app/fonts/ninetea/Ninetea-Regular.woff',
     variable: '--font-ninetea-regular'
 })
@@ -55,5 +55,10 @@ const nineteaSemiBold = localFont({
     variable: '--font-ninetea-semi-bold'
 })
 
+const quinn = localFont({
+    src: '../app/fonts/quinn/Quinn-Bold.woff',
+    variable: '--font-quinn'
+})
 
-export {catalish, catalishItalic, kupertino, kupertinoOblique, madinah, nineteaBlack, nineteaBold, nineteaExtraBold, nineteaMedium, nineteaRegular, nineteaSemiBold}
+
+export { catalish, catalishItalic, kupertino, kupertinoOblique, madinah, nineteaBlack, nineteaBold, nineteaExtraBold, nineteaMedium, nineteaRegular, nineteaSemiBold, quinn }
