@@ -8,7 +8,7 @@
     left: 0;
     z-index: 9999;
     width: 100vw;
-    background: linear-gradient(135deg, var(--verde-100) 0%, var(--verde-25) 100%);
+    background: linear-gradient(135deg, var(--verde-100) 50%, var(--azul-100) 150%);
 }
 
 .Logo {
@@ -49,7 +49,7 @@
 .HamburgerLine {
     width: 20px;
     height: 2px;
-    background: var(--verde-100);
+    background: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;

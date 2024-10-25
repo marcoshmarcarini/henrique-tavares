@@ -33,7 +33,7 @@ html {
 
 body {
   color: var(--foreground);
-  background: linear-gradient(135deg, var(--verde-100) 0%, var(--verde-25) 100%);
+  background: linear-gradient(135deg, var(--verde-100) 50%, var(--azul-100) 150%);
   font-family: Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-size: 100vw 100%;
