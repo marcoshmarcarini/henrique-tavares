@@ -5,6 +5,11 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import styles from './Banner.module.css'
 import 'swiper/css'
 import 'swiper/css/pagination'
+import { CSSProperties } from 'react'
+
+interface CustomStyle extends CSSProperties {
+    ["--swiper-pagination-color"]?: string
+}
 
 export default function Banner() {
 
@@ -19,6 +24,10 @@ export default function Banner() {
             }}
             modules={[Autoplay, Pagination]}
             className={styles.swiperHome}
+
+            style={{
+                "--swiper-pagination-color": 'var(--verde-25)',
+            } as CustomStyle}
         >
             <SwiperSlide>
                 <Image

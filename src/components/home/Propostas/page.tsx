@@ -12,6 +12,7 @@ import { CSSProperties } from "react"
 interface CustomStyle extends CSSProperties {
     ["--swiper-navigation-size"]?: string
     ["--swiper-navigation-color"]?: string
+    ["--swiper-pagination-color"]?: string
 
 }
 
@@ -34,7 +35,8 @@ export default function Propostas() {
                 className={`${styles.swiperPropostas}`}
                 style={{
                     "--swiper-navigation-size": '25px',
-                    "--swiper-navigation-color": 'var(--verde-100)',
+                    "--swiper-navigation-color": 'var(--verde-25)',
+                    "--swiper-pagination-color": 'var(--verde-25)',
                 } as CustomStyle}
 
             >
