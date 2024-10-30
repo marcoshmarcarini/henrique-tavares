@@ -330,6 +330,11 @@ export default function Nav() {
                     </Link>
                 </li>
                 <li>
+                    <Link href={`#chapa`} onClick={handleClickLink}>
+                        Nossa Chapa
+                    </Link>
+                </li>
+                <li>
                     <Link href={`#contato`} onClick={handleClickLink}>
                         Contato
                     </Link>
