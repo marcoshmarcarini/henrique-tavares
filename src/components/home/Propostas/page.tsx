@@ -68,7 +68,7 @@ export default function Propostas() {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.propostaCard}>
-                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>OAB mais moderna, transparente, inclusiva e próxima da advocacia</h2>
+                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>OAB mais moderna e próxima da advocacia</h2>
                         <ul className={`${styles.propostaList} ${nineteaMedium.className}`}>
                             <li className={styles.propostaListItem}>
                                 Melhoria da comunicação entre a OAB e os advogados, adotando ferramentas modernas de gestão e
@@ -107,6 +107,16 @@ export default function Propostas() {
                             <li className={styles.propostaListItem}>
                                 Valorização da advocacia por meio de um relacionamento mais próximo e contínuo com as
                                 autoridades, reforçando o respeito às prerrogativas da classe.
+                            </li>
+                        </ul>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.propostaCard}>
+                        <h2 className={`${styles.propostaTitle} ${quinn.className}`}>Aproximação com o Poder Judiciário</h2>
+                        <ul className={`${styles.propostaList} ${nineteaMedium.className}`}>
+                            <li className={styles.propostaListItem}>
+                                Criação de uma Comissão de Diálogo Permanente com o Poder Judiciário para desenvolver soluções conjuntas e acompanhar de perto as demandas que impactam o exercício da advocacia local.
                             </li>
                         </ul>
                     </div>
